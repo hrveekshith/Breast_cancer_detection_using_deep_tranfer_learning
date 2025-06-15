@@ -21,10 +21,6 @@ A multimodal deep learning system that detects breast cancer by analyzing both *
 ├── env/ # (Optional) Virtual environment folder
 └── README.md # You're here!
 
-yaml
-Copy
-Edit
-
 ---
 
 ## ✅ Features
@@ -89,18 +85,27 @@ python src/train.py
 Dataset link
 ```
 
+---
 
 📌 Visualizations
 Training Curve
 Confusion Matrix
 output sample
 
+---
+
 🤝 Contributing
 Pull requests are welcome. If you spot bugs or have suggestions for improvements, feel free to open an issue.
+
+---
 
 📄 License
 This project is licensed under the MIT License.
 
+---
+
 🙋‍♂️ Author
 Veekshith Gowda H R
 🔗 github.com/hrveekshith/
+
+---
