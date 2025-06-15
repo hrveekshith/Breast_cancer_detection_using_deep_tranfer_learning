@@ -42,9 +42,6 @@ This project presents a robust **dual-branch deep learning approach** that lever
 ├── requirments.txt
 └── README.md
 
-yaml
-Copy
-Edit
 
 ---
 
@@ -76,22 +73,16 @@ Edit
    ```bash
    pip install -r requirments.txt
 Train the model
-
-bash
-Copy
-Edit
 python src/train.py
+
 Test the model
-
-bash
-Copy
-Edit
 python src/test.py
+
 Evaluate and Visualize
-
 View confusion matrix: confusion_matrix/confusion_matrix.png
-
 View training curve: training_curves/training_curves.png
+
+---
 
 📁 Dataset
 BreakHis Dataset (Histopathological images): Kaggle / BreakHis
@@ -99,6 +90,8 @@ BreakHis Dataset (Histopathological images): Kaggle / BreakHis
 Thermal images are derived during preprocessing using custom thermal_conversion.py.
 
 Note: Dataset not included in repo due to size (4GB). Download and place under data/raw/.
+
+---
 
 ⚙️ Features
 Dual-pathway processing of different image modalities
@@ -109,22 +102,30 @@ Modular code for easy training and testing
 
 Visualization tools for debugging and evaluation
 
+---
+
 📈 Results
 Achieved high classification accuracy on both benign and malignant classes.
 
 Dual-branch model outperformed single-branch baselines.
 
+---
+
 🤝 Contributing
 Pull requests are welcome. If you spot bugs or have suggestions for improvements, feel free to open an issue.
+
+---
 
 📄 License
 This project is licensed under the MIT License.
 
+---
+
 🙋‍♂️ Author
 Veekshith Gowda H R
 
-💼 LinkedIn
+💼 LinkedIn:www.linkedin.com/in/veekshith-h-r-25a110248
 
-💻 GitHub
+💻 GitHub:https://github.com/hrveekshith
 
 📧 Email: veekshithhrveekshithhr@gamil.com
