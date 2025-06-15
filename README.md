@@ -69,22 +69,27 @@ This project presents a robust **dual-branch deep learning approach** that lever
 
 ## 🚀 How to Run
 
+If u dont want to train it again and simply use the pretrained model my me then simply run the [python -m src.test] while the virtual environment is activate with all packages are installed which are required
+
 1. **Install dependencies**
-   ```bash
+   ```bash [ before running the code scripts the virtual environment must to activated ]
    pip install -r requirments.txt
-Train the model
-python src/train.py
+2. Train the model
+python -m src.train
 
-Test the model
-python src/test.py
+3. Test the model
+python -m src.test
 
-Evaluate and Visualize
+4. Evaluate and Visualize
+python -m src.plot_training [ for ploting the training curve ]
+python -m src.evaluate [ for evaluating the trained model ]
 View confusion matrix: confusion_matrix/confusion_matrix.png
 View training curve: training_curves/training_curves.png
 
 ---
 
-📁 Dataset
+📁 Dataset:
+
 BreakHis Dataset (Histopathological images): Kaggle / BreakHis
 
 Thermal images are derived during preprocessing using custom thermal_conversion.py.
@@ -93,7 +98,8 @@ Note: Dataset not included in repo due to size (4GB). Download and place under d
 
 ---
 
-⚙️ Features
+⚙️ Features:
+
 Dual-pathway processing of different image modalities
 
 Simulated thermal generation pipeline
@@ -104,25 +110,29 @@ Visualization tools for debugging and evaluation
 
 ---
 
-📈 Results
+📈 Results:
+
 Achieved high classification accuracy on both benign and malignant classes.
 
 Dual-branch model outperformed single-branch baselines.
 
 ---
 
-🤝 Contributing
+🤝 Contributing:
+
 Pull requests are welcome. If you spot bugs or have suggestions for improvements, feel free to open an issue.
 
 ---
 
-📄 License
+📄 License:
+
 This project is licensed under the MIT License.
 
 ---
 
 🙋‍♂️ Author
-Veekshith Gowda H R
+
+Veekshith H R
 
 💼 LinkedIn:www.linkedin.com/in/veekshith-h-r-25a110248
 
