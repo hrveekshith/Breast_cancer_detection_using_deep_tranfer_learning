@@ -1,103 +1,106 @@
-# 🧠 Breast Cancer Detection Using Deep Transfer Learning
+🧠 Breast Cancer Detection Using Deep Transfer Learning
+This project implements a dual-branch deep learning model that analyzes both histopathological and thermal images to detect breast cancer. It combines two powerful image modalities for enhanced diagnostic accuracy, aiding in early and reliable cancer detection.
 
-A multimodal deep learning system that detects breast cancer by analyzing both **thermal** and **histopathological** images. This project combines domain knowledge and powerful transfer learning techniques to enhance diagnostic accuracy.
+🚀 Features
+🔬 Dual-branch CNN architecture
 
-![Dual Branch Model Output](outputs/output.png)
+🧪 Support for both thermal and histopathological images
 
----
+📈 Training and validation visualization
 
-## 📁 Folder Structure
+📊 Confusion matrix to evaluate classification performance
 
-📦 breast_cancer_detection/
-├── src/ # Source code: models, training, testing
-├── data/ # 'raw' & 'thermal' data folders
-├── outputs/ # Model output visuals
-├── confusion matrix/ # Confusion matrix plots
-├── training curves/ # Loss & accuracy graphs
-├── testing_data/ # Samples used during inference
-├── dual_branch_cnn*.pth # Trained model weights
-├── training_history.pkl # Training metadata
-├── requirements.txt # Python dependencies
-├── env/ # (Optional) Virtual environment folder
-└── README.md # You're here!
+✅ Trained on the BreaKHis dataset and preprocessed thermal images
 
-yaml
+🧠 Uses PyTorch for deep learning and training
+
+📂 Project Structure
+bash
 Copy
 Edit
+├── data/
+│   ├── raw/                   # Raw histopathological images
+│   └── thermal/               # Converted thermal images
+│
+├── src/                       # Source code for dataset, models, training
+│   ├── model.py
+│   ├── train.py
+│   ├── test.py
+│   └── ...
+│
+├── outputs/                   # Sample output predictions
+├── confusion matrix/         # Confusion matrices (new and old)
+├── training curves/          # Training curve plots (new and old)
+├── dual_branch_cnn.pth       # Trained model (latest)
+├── dual_branch_cnn1.pth      # Backup model
+├── training_history.pkl      # Training history (new)
+├── training_history_old.pkl  # Old training history
+├── requirements.txt          # Required Python packages
+└── README.md
+📦 Requirements
+Python 3.8+
 
----
+PyTorch
 
-## ✅ Features
+NumPy
 
-- Dual-branch architecture for fusion of thermal and histopathological data
-- Custom dataset loaders and preprocessing scripts
-- Transfer learning with pretrained CNNs
-- Visual training/evaluation tracking
-- Evaluation metrics and confusion matrix
-- Easily test on new input images
+Matplotlib
 
----
+scikit-learn
 
-## 🛠️ Tech Stack
+OpenCV
 
-- Python
-- PyTorch
-- OpenCV, NumPy, Pandas
-- Matplotlib, Seaborn
-- Scikit-learn
+tqdm
 
----
+Install dependencies:
 
-## 🧠 Model Architecture
-
-- Each input type (thermal and histopathology) is passed through its own CNN (based on ResNet).
-- Feature vectors from both branches are **concatenated** and passed through dense layers.
-- Final output: Binary classification (Malignant / Benign).
-
----
-
-## 📊 Results
-
-| Model         | Accuracy | Precision | Recall | F1 Score |
-|---------------|----------|-----------|--------|----------|
-| Thermal       | ~92%     | 90.2%     | 93.1%  | 91.6%    |
-| Histological  | ~95%     | 94.1%     | 96.2%  | 95.1%    |
-| **Dual-Branch** | **97.2%** | **96.5%** | **97.9%** | **97.2%** |
-
-📌 See:
-- `confusion matrix/confusion_matrix.png`
-- `training curves/training_curves.png`
-
----
-
-## 🚀 Getting Started
-
-### 1. Clone the Repo
-
-```bash
-1.git clone https://github.com/hrveekshith/Breast_cancer_detection_using_deep_tranfer_learning.git
-cd Breast_cancer_detection_using_deep_tranfer_learning
-2. Install Dependencies
+bash
+Copy
+Edit
 pip install -r requirements.txt
-3. Run Inference
-python src/test.py --img_path testing_data/SOB_B_TA-14-16184-200-002.png
-4. Train the Model (Optional)
+🏁 Getting Started
+Clone the repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/hrveekshith/Breast_cancer_detection_using_deep_tranfer_learning.git
+cd Breast_cancer_detection_using_deep_tranfer_learning
+Prepare the dataset:
+
+Download the BreaKHis dataset: BreaKHis Dataset (4GB)
+
+Place the histopathological and thermal images inside the data/raw/ and data/thermal/ folders respectively.
+
+Train the model:
+
+bash
+Copy
+Edit
 python src/train.py
-🔔 You must download the BreakHis dataset manually and place it inside the data/raw folder.
-Dataset link
+Evaluate the model:
 
+bash
+Copy
+Edit
+python src/test.py
 📌 Visualizations
-Training Curve:
+📈 Training Curve
 
-Confusion Matrix:
+📊 Confusion Matrix
+
+📸 Output Sample
+![Dual Branch Model Output](outputs/output.png)
+
+📚 Research Context
+This project is a research-oriented implementation exploring how multimodal learning (histopathology + thermal imaging) can enhance the detection of malignant vs benign breast cancer cases. The project reflects a combination of transfer learning, image preprocessing, and model fusion techniques.
 
 🤝 Contributing
-Pull requests are welcome. If you spot bugs or have suggestions for improvements, feel free to open an issue.
+Pull requests are welcome! If you discover bugs or have ideas for improvement, feel free to open an issue or submit a PR.
 
 📄 License
-This project is licensed under the MIT License.
+This project is licensed under the MIT License — see the LICENSE file for details.
 
 🙋‍♂️ Author
 Veekshith Gowda H R
 🔗 GitHub Profile
-
