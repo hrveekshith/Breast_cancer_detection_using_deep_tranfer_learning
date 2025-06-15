@@ -106,6 +106,9 @@ This project is licensed under the MIT License.
 
 🙋‍♂️ Author
 Veekshith Gowda H R
-🔗 github.com/hrveekshith/
+🔗 ![email](veekshithhrveekshithhr@gmail.com)
+🔗 ![github](https://github.com/hrveekshith/)
+🔗 ![LinkedIn](https://www.linkedin.com/in/veekshith-h-r-25a110248?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BIlV6QtkoTFKjAs8WLpc5Tg%3D%3D)
+
 
 ---
